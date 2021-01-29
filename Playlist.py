@@ -49,3 +49,20 @@ class Playlist:
 
   def print_songs(self):
     pass
+
+if __name__ == "__main__":
+  playlist = Playlist()
+
+  playlist.add_song("Hello")
+
+  playlist.add_song("Hey")
+
+  playlist.add_song("Hi")
+
+  print(playlist.find_song("Hey"))
+
+  print(playlist.find_song("Hi"))
+
+  print(playlist.find_song("Hello"))
+
+  print(playlist.find_song("Not In Here"))
