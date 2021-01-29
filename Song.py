@@ -28,3 +28,16 @@ class Song:
   # TODO: Using the __repr__ dunder method, return a string formatted as the following:'Song Title -> Next Song Title'
   def __repr__(self):
     return f"{self.__title} -> {self.__next_song}"
+
+if __name__ == "__main__":
+  song = Song("Halo")
+
+  print(song.get_title())
+
+  song.set_title("Hello")
+
+  print(song.get_title())
+
+  song.set_next_song("Hey")
+
+  print(song.get_next_song())
