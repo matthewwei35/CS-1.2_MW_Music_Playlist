@@ -29,7 +29,7 @@ class Playlist:
 
   def remove_song(self, title):
     pass
-
+        
   # TODO: Create a method called length, which returns the number of songs in the playlist.
 
   def length(self):
@@ -48,21 +48,32 @@ class Playlist:
   # 3. Song Title 3
 
   def print_songs(self):
-    pass
+    current_song = self.__first_song
+    counter = 0
+    if current_song == None:
+      print("There are currently no songs in this playlist.")
+    while current_song != None:
+      counter += 1
+      print(f"{counter}. {current_song.get_title()}")
+      current_song = current_song.next
 
 if __name__ == "__main__":
   playlist = Playlist()
 
-  playlist.add_song("Hello")
+  # playlist.add_song("Hello")
 
-  playlist.add_song("Hey")
+  # playlist.add_song("Hey")
 
-  playlist.add_song("Hi")
+  # playlist.add_song("Hi")
 
-  print(playlist.find_song("Hey"))
+  # print(playlist.find_song("Hey"))
 
-  print(playlist.find_song("Hi"))
+  # print(playlist.find_song("Hi"))
 
-  print(playlist.find_song("Hello"))
+  # print(playlist.find_song("Hello"))
 
-  print(playlist.find_song("Not In Here"))
+  # print(playlist.find_song("Not In Here"))
+
+  # print(playlist.length())
+
+  playlist.print_songs()
