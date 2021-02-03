@@ -41,3 +41,7 @@ if __name__ == "__main__":
   song.set_next_song("Hey")
 
   print(song.get_next_song())
+
+  print(song.__str__())
+
+  print(song.__repr__())
