@@ -60,4 +60,3 @@ while True:
   # Message for invalid input
   else:
     print('That is not a valid option. Try again.\n')
-
